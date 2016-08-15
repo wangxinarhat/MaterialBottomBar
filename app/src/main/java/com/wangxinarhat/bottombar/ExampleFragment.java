@@ -48,6 +48,7 @@ public class ExampleFragment extends Fragment {
 
 
     private int mType;
+    private String[] tabs;
 
     public static Fragment newInstance(int type) {
         Bundle bundle = new Bundle();
@@ -65,7 +66,7 @@ public class ExampleFragment extends Fragment {
         ButterKnife.bind(this, root);
 
 
-        setMenuVisibility(true);
+        setMenuVisibility(true);//toolbar menu is visiable? default true
         return root;
     }
 
@@ -74,6 +75,7 @@ public class ExampleFragment extends Fragment {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
         mType = getArguments().getInt("type");
+        tabs = getResources().getStringArray(R.array.tab_strs);
     }
 
 
@@ -134,31 +136,22 @@ public class ExampleFragment extends Fragment {
     private void barConfig() {
 
         IToolbarConfig config = null;
-        String toolbarTitle = null;
+        String toolbarTitle = tabs[mType];
         switch (mType) {
             case 0:
                 config = new ToolbarConfigRecent();
-                toolbarTitle = "最近";
                 break;
             case 1:
                 config = new ToolbarConfigFavorite();
-                toolbarTitle = "喜爱";
-
                 break;
             case 2:
                 config = new ToolbarConfigNearby();
-                toolbarTitle = "附近";
-
                 break;
             case 3:
                 config = new ToolbarConfigMine();
-                toolbarTitle = "我的";
-
                 break;
             case 4:
                 config = new ToolbarConfigEat();
-                toolbarTitle = "吃饭";
-
                 break;
 
         }

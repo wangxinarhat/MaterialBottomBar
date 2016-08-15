@@ -3,6 +3,7 @@ package com.wangxinarhat.bottombar;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 
@@ -38,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void initBottomBar(Bundle savedInstanceState) {
 
-        mBottomBar = BottomBar.attach(this, savedInstanceState);
+        mBottomBar = BottomBar.attachShy((CoordinatorLayout) findViewById(R.id.coor),findViewById(R.id.contentFrame), savedInstanceState);
+
         mBottomBar.setMaxFixedTabs(5);
         mBottomBar.setItems(R.menu.bottombar_menu);
 

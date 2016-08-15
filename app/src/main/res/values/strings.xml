@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">MaterialBottomBar</string>
+    <string name="recents">Recents</string>
+    <string name="favorites">Favorites</string>
+    <string name="nearby">Nearby</string>
+    <string name="friends">Friends</string>
+    <string name="restaurants">Restaurants</string>
+
+
+
+    <string-array name="tab_strs">
+        <item >Recents</item>
+        <item >Favorites</item>
+        <item >Nearby</item>
+        <item >Friends</item>
+        <item >Restaurants</item>
+    </string-array>
 </resources>

@@ -19,6 +19,7 @@ public class ToolbarConfigMine implements IToolbarConfig {
         TextView toolbarText = (TextView) activity.findViewById(R.id.toolbar_title);
 
 
+
         activity.setSupportActionBar(toolbar);
         ActionBar ab = activity.getSupportActionBar();
         ab.setDisplayShowTitleEnabled(false);
