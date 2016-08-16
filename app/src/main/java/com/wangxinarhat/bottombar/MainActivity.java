@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         fragments.add(ExampleFragment.newInstance(4));
 
 
+
+
         mFragController = new FragController(savedInstanceState, getSupportFragmentManager(), R.id.contentFrame, fragments);
 
 
