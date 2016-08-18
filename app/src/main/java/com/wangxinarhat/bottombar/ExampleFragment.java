@@ -155,6 +155,8 @@ public class ExampleFragment extends Fragment {
                 break;
 
         }
+
+
         DynamicProxy proxy = new DynamicProxy(config);
         ClassLoader loader = config.getClass().getClassLoader();
         IToolbarConfig iToolbarConfig = (IToolbarConfig) Proxy.newProxyInstance(loader, new Class[]{IToolbarConfig.class}, proxy);

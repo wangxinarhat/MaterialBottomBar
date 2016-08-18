@@ -30,6 +30,13 @@ ext {
     compileSdkVersion = 23
     buildToolsVersion = '23.0.3'
 
+    //app version
+    versionCode = 1
+    versionName = "1.0"
+
+    applicationId = "com.wangxinarhat.bottombar"
+
+
     // App dependencies
     supportLibraryVersion = '23.1.1'
     guavaVersion = '18.0'

@@ -8,6 +8,4 @@ import android.support.v7.app.AppCompatActivity;
 public interface IToolbarConfig {
 
     void toolbarConfig(AppCompatActivity activity,String toolbarTitle);
-
-
 }
