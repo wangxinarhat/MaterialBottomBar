@@ -54,6 +54,7 @@ public class ExampleFragment extends Fragment {
         Bundle bundle = new Bundle();
         bundle.putInt("type", type);
 
+
         Fragment fragment = new ExampleFragment();
         fragment.setArguments(bundle);
         return fragment;
